@@ -1,0 +1,1 @@
+This directory contains code generated while learning python with the coursera course "Python for everyone", which can be found at https://www.coursera.org/learn/python/home/info
