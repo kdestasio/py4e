@@ -1,0 +1,7 @@
+fruit = 'bananas'
+print('The sh*t is', fruit)
+index = 0
+while index < len(fruit) :
+    letter = fruit[index]
+    print(letter)
+    index = index + 1
