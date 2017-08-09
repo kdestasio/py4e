@@ -22,7 +22,6 @@ for line in fhand:
     line = line.rstrip()
     # Skip 'uninteresting lines'
     if not line.startswith('From:'):
-         # skip back to the beginning of the loop
     # Process our 'interesting' line
         print(line)
 	# Code: http://www.py4e.com/code3/search3.py
