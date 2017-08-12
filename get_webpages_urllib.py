@@ -4,8 +4,10 @@ import urllib.request
 
 fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
 for line in fhand:
-    print(line.decode().strip())
-# Code: http://www.py4e.com/code3/urllib1.py
+    print(line.decode().strip()) 
+    # the decode operation decodes the byte array that socket gives us. 
+    # Default assumptions are ASCII or UTF-8
+    # Code: http://www.py4e.com/code3/urllib1.py
 
 # Get data and count the frequency of each word in the file
 import urllib.request, urllib.parse, urllib.error
