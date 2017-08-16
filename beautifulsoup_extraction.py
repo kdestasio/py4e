@@ -16,12 +16,12 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter - ') # For example: http://www.dr-chuck.com/page1.htm
-html = urllib.request.urlopen(url, context=ctx).read()
-soup = BeautifulSoup(html, 'html.parser')
+html = urllib.request.urlopen(url, context=ctx).read() # read means pull in the whole file
+soup = BeautifulSoup(html, 'html.parser') # html.parser cleans up all the syntax errors in the html code
 
 # Retrieve all of the anchor tags
-tags = soup('a')
+tags = soup('a') # get a list of all the anchor tags in the document
 for tag in tags:
-    print(tag.get('href', None))
+    print(tag.get('href', None)) # pull out the href key (links)
 
 # Code: http://www.py4e.com/code3/urllinks.py
