@@ -1,4 +1,7 @@
 # gitignore file for the py4e repository
 
+# Files
+hidden.py
+
 # directories
 __pycache__/
